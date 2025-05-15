@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CytokineProfile Project</title>
+  <style>
+    body { font-family: sans-serif; max-width: 1000px; margin: 2rem auto; line-height: 1.6; padding: 0 1rem; }
+    header, footer { text-align: center; }
+    header h1 { margin-bottom: 0.2em; }
+    nav { margin-bottom: 2rem; text-align: center; }
+    nav a { margin: 0 1em; text-decoration: none; color: #0366d6; }
+    .sidebar { float: right; width: 250px; margin-left: 1em; }
+    .sidebar h3 { margin-top: 0; }
+    section { clear: both; margin-bottom: 3rem; }
+    h2 { border-bottom: 1px solid #ddd; padding-bottom: 0.3em; }
+    ul { margin-top: 0.5em; }
+    pre { background: #f6f8fa; padding: 1em; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CytokineProfile</h1>
+    <p>An ecosystem for cytokine data analysis: R package + Shiny application</p>
+    <nav>
+      <a href="#shiny-app">Shiny App</a>
+      <a href="#package">R Package</a>
+    </nav>
+  </header>
+
+  <section id="shiny-app">
+    <h2>CytokineProfile Shiny Application</h2>
+    <div class="sidebar">
+      <img src="logo_hex.png" alt="App logo" style="width:100%; border-radius: 8px;">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Browse source code</a></li>
+        <li><a href="#">App Link</a></li>
+        <li><a href="#">Report a bug</a></li>
+      </ul>
+      <h3>License</h3>
+      <p>GPL (>= 2)</p>
+      <h3>Citation</h3>
+      <p><a href="#">Citing CytokineProfileShinyApp</a></p>
+    </div>
+    <p>The goal of CytokineProfile Shiny is to conduct quality control using biologically meaningful cutoffs on raw measured values of cytokines. Specifically, it tests distributional symmetry to suggest transformations, performs exploratory analysis (summary statistics, barplots, boxplots), and runs univariate and multivariate analyses for advanced insights. It provides a user-friendly wizard-style interface for your own data. The underlying R package is available on <a href="#">GitHub</a> and <a href="#">CRAN</a>.</p>
+    <p>The Shiny application is available at the <a href="#">CytokineProfile Shiny App</a>.</p>
+    <h3>Features</h3>
+    <ul>
+      <li>Data Upload & Built-in Datasets (CSV, TXT, Excel)</li>
+      <li>Dynamic Column Selection & Filtering</li>
+      <li>Analysis Functions:
+        <ol>
+          <li>ANOVA</li>
+          <li>Boxplots & Enhanced Boxplots</li>
+          <li>Error-Bar Plots</li>
+          <li>Dual-Flashlight Plot</li>
+          <li>Heatmap</li>
+          <li>PCA</li>
+          <li>Random Forest</li>
+          <li>Skewness/Kurtosis</li>
+          <li>sPLS-DA</li>
+          <li>Two-Sample T-Test</li>
+          <li>Volcano Plot</li>
+          <li>XGBoost</li>
+        </ol>
+      </li>
+      <li>Interactive & Downloadable Outputs (PDF reports, images)</li>
+      <li>Step-by-Step Wizard Navigation</li>
+      <li>Theme Toggle (Light/Dark)</li>
+      <li>Inline Help & Tooltips</li>
+    </ul>
+  </section>
+
+  <section id="package">
+    <h2>Welcome to CytoProfile</h2>
+    <div class="sidebar">
+      <img src="logo_hex.png" alt="Package logo" style="width:100%; border-radius: 8px;">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">View on CRAN</a></li>
+        <li><a href="#">Browse source code</a></li>
+        <li><a href="#">Report a bug</a></li>
+        <li><a href="#">Read more</a></li>
+      </ul>
+      <h3>License</h3>
+      <p>GPL (>= 2)</p>
+      <h3>Community</h3>
+      <p><a href="#">Code of conduct</a></p>
+      <h3>Citation</h3>
+      <p><a href="#">Citing CytoProfile</a></p>
+    </div>
+    <p><strong>CytoProfile</strong> is an R package designed for advanced cytokine data analysis. It provides a comprehensive suite of functions for exploratory, univariate, and multivariate analysis, as well as machine learning tailored to your cytokine datasets.</p>
+    <h3>Key Features</h3>
+    <ul>
+      <li><strong>Exploratory Analysis:</strong> Bar plots, boxplots, summary statistics.</li>
+      <li><strong>Statistical Testing:</strong> t-tests, ANOVA, univariate methods.</li>
+      <li><strong>Multivariate Analysis:</strong> PCA, PLS-DA, etc.</li>
+      <li><strong>Machine Learning:</strong> Random Forest, XGBoost.</li>
+      <li><strong>Data Handling:</strong> Seamless loading and preprocessing.</li>
+    </ul>
+    <p>Install the development version from GitHub:</p>
+    <pre><code># install.packages("devtools")
+devtools::install_github("YOUR_USERNAME/CytoProfile")</code></pre>
+    <p>Install from CRAN:</p>
+    <pre><code>install.packages("CytoProfile")
+</code></pre>
+    <h3>Learn More</h3>
+    <ul>
+      <li><a href="#">Getting Started Guide</a></li>
+      <li><a href="#">Function Reference</a></li>
+      <li><a href="#">GitHub Repository</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shubh Saraswat & Xiaohua Douglas Zhang</p>
+  </footer>
+</body>
+</html>
