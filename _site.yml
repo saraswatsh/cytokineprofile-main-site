@@ -19,6 +19,7 @@ output:
     theme:
       version: 5
       bootswatch: "darkly"
+    favicon: logo.png
     css: styles.css
     theme_selector: true
     highlight: tango
