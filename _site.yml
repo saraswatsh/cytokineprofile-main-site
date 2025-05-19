@@ -1,8 +1,30 @@
-name: "my-website"
+name: "CytokineProfile"
+output_dir: "docs"
+home:
+  title: Welcome to CytokineProfile
+  tagline: A Comprehensive Cytokine Profiling Tool
 navbar:
-  title: "My Website"
-  left:
+  title: "CytokineProfile"
+  right:
     - text: "Home"
       href: index.html
+    - text: "Applications"
+      href: applications.html
     - text: "About"
       href: about.html
+    - icon: fa-github
+      href: https://github.com/saraswatsh/CytoProfile
+output:
+  html_document:
+    theme:
+      version: 5
+      bootswatch: "darkly"
+    css: styles.css
+    theme_selector: true
+    highlight: tango
+    includes:
+      in_header: 
+        -   fa-header.html
+      after_body: 
+        -   footer.html
+        -   footer-scroll.js

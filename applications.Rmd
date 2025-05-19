@@ -1,0 +1,66 @@
+---
+title: Installation and Features
+---
+
+## CytoProfile R Package
+
+## Features
+
+* Exploratory Analysis: Quickly generate enriched bar plots, boxplots, and summary statistics to assess your data.
+
+* Statistical Testing: Perform t-tests, ANOVA, and other univariate methods with ease.
+
+* Multivariate Analysis: Utilize PCA, PLS-DA, and other techniques for deeper insights.
+
+* Machine Learning: Integrate Random Forest and XGBoost models for predictive analysis.
+
+* Data Handling: Seamlessly load and preprocess cytokine data for efficient analysis.
+
+See more at [CytoProfile's website](https://cytoprofile.cytokineprofile.org/) for installation instructions.
+
+Install CytoProfile from [CRAN](https://cloud.r-project.org/package=CytoProfile) with:
+
+``` {r, eval=FALSE}
+install.packages("CytoProfile")
+```
+
+## CytokineProfile R Shiny Application
+
+## Features
+
+* Data Upload & Built-in Data Options:
+    Upload your own data files (CSV, TXT, Excel) or choose from built-in datasets.
+
+* Dynamic Column Selection & Filtering:
+    Easily select columns and apply filters based on categorical variables to focus your analysis.
+
+* Multiple Analysis Functions:
+  - Choose from several analysis functions, including:
+    1. ANOVA
+    2. Boxplots and Enhanced Boxplots
+    3. Error-Bar Plots
+    4. Dual-Flashlight Plot
+    5. Heatmap
+    6. Principal Component Analysis (PCA)
+    7. Random Forest
+    8. Skewness/Kurtosis
+    9. Sparse Partial Least Squares - Discriminant Analysis (sPLS-DA)
+    10. Two-Sample T-Test
+    11. Volcano Plot
+    12. Extreme Gradient Boosting (XGBoost)
+
+* Interactive & Downloadable Outputs:
+    View results directly within the app or download outputs (e.g., PDF reports, images).
+
+* Step-by-Step Wizard Navigation:
+    A guided process takes you through data upload, column selection, configuration of analysis options, and result display.
+
+* Theme Toggle:
+    Switch between Light and Dark themes to suit your visual preference.
+
+* Inline Help & Tooltips:
+    Detailed helper text accompanies each input field to assist with configuration and interpretation.
+
+See more at [CytokineProfile Shiny](https://shinyinfo.cytokineprofile.org/) for installation instructions. 
+
+The app is available to access at [CytokineProfile Shiny App](https://saraswatsh-cytokineprofileshiny.share.connect.posit.cloud/).

@@ -1,5 +1,32 @@
 ---
-title: "About This Website"
+title: "About Us"
 ---
 
-More about this website.
+::: {.row}
+
+::: {.col-md-6 .panel .panel-default}
+### Shubh Saraswat
+
+*Creator and Author of CytokineProfile*     
+*PhD Student in Epidemiology & Biostatistics*  
+University of Kentucky
+
+[<i class="fa-solid fa-envelope"></i> Email](mailto:your.email@uky.edu){.btn .btn-primary}
+[<i class="fa-brands fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/your-profile){.btn .btn-info}
+[<i class="fa-brands fa-github"></i> GitHub](https://github.com/saraswatsh){.btn .btn-default}
+[<i class="fa-brands fa-orcid"></i> ORCID](https://orcid.org/0009-0009-2359-1484)
+:::
+
+::: {.col-md-6 .panel .panel-default}
+### Xiaohua Douglas Zhang
+
+*Author of CytokineProfile*     
+*Professor, Department of Biostatistics*  
+University of Kentucky
+
+[<i class="fa-solid fa-envelope"></i> Email](mailto:douglas.zhang@uky.edu){.btn .btn-primary}
+[<i class="fa-brands fa-orcid"></i> ORCID](https://orcid.org/0000-0002-2486-7931)
+:::
+
+:::
+
