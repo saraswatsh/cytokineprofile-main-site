@@ -24,7 +24,6 @@
     background-color: rgba(255, 255, 255, 0.1) !important;
     color: #ffffff !important;
     border-bottom: 3px solid #4dabf7;
-    /* change #4dabf7 to your accent */
 }
 
 /* 5. (Optional) Tweak footer to match */
@@ -40,7 +39,6 @@ footer div {
 
 footer a {
     color: #4dabf7 !important;
-    /* match your accent color */
 }
 
 footer a:hover {
@@ -58,4 +56,192 @@ footer a:hover {
 #site-footer.visible {
     opacity: 1;
     pointer-events: auto;
+}
+
+/* Define what light mode means when data-bs-theme="light" */
+[data-bs-theme="light"] {
+    --bs-body-bg: #ffffff;
+    /* White page background */
+    --bs-body-color: #212529;
+    /* Dark text color */
+    --bs-emphasis-color: #000000;
+    /* Slightly more emphasized text */
+    --bs-secondary-color: #6c757d;
+    /* Lighter grey for secondary text */
+    --bs-secondary-bg: #e9ecef;
+    /* Light grey for secondary backgrounds */
+    --bs-tertiary-bg: #f8f9fa;
+    /* Even lighter grey for tertiary backgrounds */
+    --bs-border-color: #dee2e6;
+    /* Standard border color for light mode */
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    /* Translucent border for light mode */
+
+    /* Link colors for light mode */
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+
+    /* --- Component Specific Overrides for Light Mode --- */
+
+    /* Cards */
+    --bs-card-bg: #fff;
+    --bs-card-color: null;
+    /* Resets to --bs-body-color */
+    --bs-card-border-color: var(--bs-border-color);
+
+}
+
+[data-bs-theme="light"] body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+[data-bs-theme="light"] .navbar-default {
+    background-color: #f8f8f8;
+    /* A typical light navbar background */
+    border-color: #e7e7e7;
+}
+
+[data-bs-theme="light"] .navbar-default .navbar-brand,
+[data-bs-theme="light"] .navbar-default .navbar-nav>li>a {
+    color: #777;
+    /* Text color for navbar links */
+}
+
+[data-bs-theme="light"] .navbar-default .navbar-brand:hover,
+[data-bs-theme="light"] .navbar-default .navbar-brand:focus,
+[data-bs-theme="light"] .navbar-default .navbar-nav>li>a:hover,
+[data-bs-theme="light"] .navbar-default .navbar-nav>li>a:focus {
+    color: #5e5e5e;
+    /* Darker text on hover/focus */
+}
+
+/* Active navbar item */
+[data-bs-theme="light"] .navbar-default .navbar-nav>.active>a,
+[data-bs-theme="light"] .navbar-default .navbar-nav>.active>a:hover,
+[data-bs-theme="light"] .navbar-default .navbar-nav>.active>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+    /* Light background for active item */
+}
+
+/* Navbar toggle button styling (the "hamburger" icon) */
+[data-bs-theme="light"] .navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+
+[data-bs-theme="light"] .navbar-default .navbar-toggle:hover,
+[data-bs-theme="light"] .navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+[data-bs-theme="light"] .navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+    /* Color of the bars in the hamburger icon */
+}
+
+/* Footer styling for light mode */
+[data-bs-theme="light"] #site-footer {
+    background-color: #f8f8f8;
+    /* Example light footer background */
+    color: #777;
+    /* Example light footer text */
+    border-top: 1px solid #e7e7e7;
+}
+
+[data-bs-theme="light"] #site-footer .navbar-text {
+    color: #777;
+}
+
+/* Override link colors for the dark theme (Darkly) */
+[data-bs-theme="dark"] {
+    --bs-link-color: #3498db;
+    /* Brighter Blue */
+    --bs-link-color-rgb: 52, 152, 219;
+
+    /* Color for links when hovered over */
+    --bs-link-hover-color: #5dade2;
+    /* A slightly lighter or more vivid blue for hover */
+    --bs-link-hover-color-rgb: 93, 173, 226;
+
+    /* Style the ORCID text links (those without .btn class) */
+    .panel .panel-default a[href*="orcid.org"]:not(.btn) {
+        color: #6fdc9a !important;
+        text-decoration: underline !important;
+        font-weight: normal !important;
+    }
+
+    .panel .panel-default a[href*="orcid.org"]:not(.btn):hover {
+        color: #89e7b0 !important;
+        /* Slightly lighter on hover */
+    }
+
+    /* --- Styling for the buttons (.btn) within the About Us panels --- */
+    /* General text/icon color for all these buttons in dark mode */
+    .panel .panel-default a.btn {
+        color: #ffffff !important;
+        /* White text/icon */
+        text-decoration: none !important;
+        /* Remove underline from button links */
+        border-width: 1px;
+        border-style: solid;
+        margin-right: 5px;
+        /* Space between buttons */
+        margin-bottom: 5px;
+        /* Space if they wrap */
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .panel .panel-default a.btn:hover {
+        color: #f0f0f0 !important;
+        /* Slightly off-white on hover for text/icon */
+    }
+
+    .panel .panel-default a.btn i {
+        /* Ensure icons inside are also white */
+        color: #ffffff !important;
+        margin-right: 5px;
+        /* Space between icon and text */
+    }
+
+    /* Email button */
+    .panel .panel-default a.btn.btn-primary {
+        background-color: #4A5568;
+        /* Dark slate blue/grey */
+        border-color: #3A4558;
+        /* Slightly darker border */
+    }
+
+    .panel .panel-default a.btn.btn-primary:hover {
+        background-color: #5A677B;
+        /* Slightly lighter on hover */
+        border-color: #4A576B;
+    }
+
+    /* LinkedIn button (.btn-info in your Rmd) */
+    .panel .panel-default a.btn.btn-info {
+        background-color: #0A66C2;
+        /* LinkedIn blue */
+        border-color: #0056A2;
+        /* Slightly darker border */
+    }
+
+    .panel .panel-default a.btn.btn-info:hover {
+        background-color: #0E76D8;
+        /* Slightly lighter on hover */
+        border-color: #0066B8;
+    }
+
+    /* GitHub button (.btn-default in your Rmd) */
+    .panel .panel-default a.btn.btn-default {
+        background-color: #3E444A;
+        border-color: #2E343A;
+    }
+
+    .panel .panel-default a.btn.btn-default:hover {
+        background-color: #4E545A;
+        /* Slightly lighter on hover */
+        border-color: #3E444A;
+    }
 }

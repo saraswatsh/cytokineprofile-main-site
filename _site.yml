@@ -27,4 +27,6 @@ output:
         - fa-header.html         
       after_body:
         - footer.html           
-        - footer-scroll.js      
+        - footer-scroll.js     
+        - footer_custom_scripts.html
+
