@@ -8,7 +8,7 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "Applications"
+    - text: "Installation & Features"
       href: applications.html
     - text: "About"
       href: about.html
@@ -21,7 +21,7 @@ output:
       bootswatch: "darkly"
     favicon: logo.png
     css: styles.css
-    highlight: tango
+    highlight: haddock
     includes:
       in_header:
         - fa-header.html         
