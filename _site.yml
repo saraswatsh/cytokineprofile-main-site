@@ -4,7 +4,7 @@ home:
   title: Welcome to CytokineProfile
   tagline: A Comprehensive Cytokine Profiling Tool
 navbar:
-  title: "CytokineProfile"
+  title: "CytokineProfile <img src='logo.png' alt='Logo' style='height:50px; vertical-align:middle; margin-right:5px;'>"
   right:
     - text: "Home"
       href: index.html

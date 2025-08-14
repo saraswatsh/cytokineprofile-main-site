@@ -13,16 +13,8 @@ knitr::opts_chunk$set(
 
 ## R package and R Shiny Application for Comprehensive Cytokine Analysis
 
-<a href="https://cytokineprofile.org/">
-  <img
-    src="logo.png"
-    alt="CytokineProfile website"
-    style="
-      float: right;
-      margin: -190px -85px 0 20px;
-      max-width: 250px;
-    "
-  />
+<a href="https://cytokineprofile.org/" class="hero-logo-link">
+  <img class="hero-logo" src="logo.png" alt="CytokineProfile website">
 </a>
 
 

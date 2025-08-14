@@ -307,3 +307,34 @@ pre:hover .btn-copy-code,
 .btn-copy-code:focus {
     opacity: 1;
 }
+
+/* Logo link*/
+.hero-logo-link {}
+
+/* Default for large screens */
+.hero-logo {
+    float: right;
+    margin: -190px 0 1rem 1rem;
+    /* negative top margin pulls the logo up */
+    max-width: 300px;
+    height: auto;
+}
+
+/* Medium screens: shrink the logo a bit */
+@media (max-width: 992px) {
+    .hero-logo {
+        float: right;
+        margin: 0 0 1rem 1rem;
+        max-width: 200px;
+    }
+}
+
+/* Small screens: remove float and centre the logo */
+@media (max-width: 576px) {
+    .hero-logo {
+        float: none;
+        display: block;
+        margin: 0 auto 1.5rem;
+        max-width: 70%;
+    }
+}
