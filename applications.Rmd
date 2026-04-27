@@ -9,7 +9,7 @@ title: Installation and Features
     View on <a href="https://cytoprofile.cytokineprofile.org/" target="_blank">CytokineProfile Website</a>
   </p>
   <p>
-    <strong>Shiny App:</strong> Launch the <a href="https://saraswatsh-cytokineprofileshiny.share.connect.posit.cloud/" target="_blank">CytokineProfile Shiny App</a> |
+    <strong>Shiny App:</strong> Launch the <a href="https://shiny.cytokineprofile.org/" target="_blank">CytokineProfile Shiny App</a> |
     See <a href="https://shinyinfo.cytokineprofile.org/" target="_blank">installation/usage instructions</a>
   </p>
 </div>
@@ -75,4 +75,4 @@ install.packages("CytoProfile")
 
 See more at [CytokineProfile Shiny](https://shinyinfo.cytokineprofile.org/) for installation instructions. 
 
-The app is available to access at [CytokineProfile Shiny App](https://saraswatsh-cytokineprofileshiny.share.connect.posit.cloud/).
+The app is available to access at [CytokineProfile Shiny App](https://shiny.cytokineprofile.org/).
